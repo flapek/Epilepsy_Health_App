@@ -1,0 +1,140 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Epilepsy_Health_App.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Epilepsy_Health_App.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Epilepsy_Health_App.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epilepsy_Health_App.Application.dll": {}
+        }
+      },
+      "Epilepsy_Health_App.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Epilepsy_Health_App.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epilepsy_Health_App.Core.dll": {}
+        }
+      },
+      "Epilepsy_Health_App.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Epilepsy_Health_App.Application": "1.0.0",
+          "Epilepsy_Health_App.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Epilepsy_Health_App.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epilepsy_Health_App.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Epilepsy_Health_App.Application/1.0.0": {
+      "type": "project",
+      "path": "../Epilepsy_Health_App.Application/Epilepsy_Health_App.Application.csproj",
+      "msbuildProject": "../Epilepsy_Health_App.Application/Epilepsy_Health_App.Application.csproj"
+    },
+    "Epilepsy_Health_App.Core/1.0.0": {
+      "type": "project",
+      "path": "../Epilepsy_Health_App.Core/Epilepsy_Health_App.Core.csproj",
+      "msbuildProject": "../Epilepsy_Health_App.Core/Epilepsy_Health_App.Core.csproj"
+    },
+    "Epilepsy_Health_App.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Epilepsy_Health_App.Infrastructure/Epilepsy_Health_App.Infrastructure.csproj",
+      "msbuildProject": "../Epilepsy_Health_App.Infrastructure/Epilepsy_Health_App.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Epilepsy_Health_App.Application >= 1.0.0",
+      "Epilepsy_Health_App.Core >= 1.0.0",
+      "Epilepsy_Health_App.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\marcin.filapek\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\EngineeringProject\\Epilepsy_Health_App\\API\\Epilepsy_Health_App\\Epilepsy_Health_App.Api\\Epilepsy_Health_App.Api.csproj",
+      "projectName": "Epilepsy_Health_App.Api",
+      "projectPath": "D:\\EngineeringProject\\Epilepsy_Health_App\\API\\Epilepsy_Health_App\\Epilepsy_Health_App.Api\\Epilepsy_Health_App.Api.csproj",
+      "packagesPath": "C:\\Users\\marcin.filapek\\.nuget\\packages\\",
+      "outputPath": "D:\\EngineeringProject\\Epilepsy_Health_App\\API\\Epilepsy_Health_App\\Epilepsy_Health_App.Api\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\marcin.filapek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 19.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\DevExpress 19.2\\.NET Core Desktop Libraries\\System\\Components\\Packages": {},
+        "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "D:\\EngineeringProject\\Epilepsy_Health_App\\API\\Epilepsy_Health_App\\Epilepsy_Health_App.Application\\Epilepsy_Health_App.Application.csproj": {
+              "projectPath": "D:\\EngineeringProject\\Epilepsy_Health_App\\API\\Epilepsy_Health_App\\Epilepsy_Health_App.Application\\Epilepsy_Health_App.Application.csproj"
+            },
+            "D:\\EngineeringProject\\Epilepsy_Health_App\\API\\Epilepsy_Health_App\\Epilepsy_Health_App.Core\\Epilepsy_Health_App.Core.csproj": {
+              "projectPath": "D:\\EngineeringProject\\Epilepsy_Health_App\\API\\Epilepsy_Health_App\\Epilepsy_Health_App.Core\\Epilepsy_Health_App.Core.csproj"
+            },
+            "D:\\EngineeringProject\\Epilepsy_Health_App\\API\\Epilepsy_Health_App\\Epilepsy_Health_App.Infrastructure\\Epilepsy_Health_App.Infrastructure.csproj": {
+              "projectPath": "D:\\EngineeringProject\\Epilepsy_Health_App\\API\\Epilepsy_Health_App\\Epilepsy_Health_App.Infrastructure\\Epilepsy_Health_App.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
