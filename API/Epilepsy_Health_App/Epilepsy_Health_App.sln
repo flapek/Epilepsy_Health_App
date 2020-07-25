@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epilepsy_Health_App.Applica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epilepsy_Health_App.Infrastructure", "Epilepsy_Health_App.Infrastructure\Epilepsy_Health_App.Infrastructure.csproj", "{2A05EAE1-A11D-482B-BBF8-5DF0AFBE3307}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epilepsy_Health_App.Tests.Unit", "Epilepsy_Health_App.Tests.Unit\Epilepsy_Health_App.Tests.Unit.csproj", "{5588C865-3B83-465E-A1A9-7FEC3201EE1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{2A05EAE1-A11D-482B-BBF8-5DF0AFBE3307}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A05EAE1-A11D-482B-BBF8-5DF0AFBE3307}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A05EAE1-A11D-482B-BBF8-5DF0AFBE3307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5588C865-3B83-465E-A1A9-7FEC3201EE1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5588C865-3B83-465E-A1A9-7FEC3201EE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5588C865-3B83-465E-A1A9-7FEC3201EE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5588C865-3B83-465E-A1A9-7FEC3201EE1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{F632B340-134F-4B28-8BC8-45BE2CEB70F5} = {47DD3A56-C9BE-4FDF-96D8-A2C72E143B9E}
 		{2C5E01E8-EAC2-4CF4-80F2-152C0FD569BF} = {47DD3A56-C9BE-4FDF-96D8-A2C72E143B9E}
 		{2A05EAE1-A11D-482B-BBF8-5DF0AFBE3307} = {47DD3A56-C9BE-4FDF-96D8-A2C72E143B9E}
+		{5588C865-3B83-465E-A1A9-7FEC3201EE1B} = {EAF5FFB2-6AF3-4395-ADB4-B7CE5E8FBEE1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD864EC2-E43D-4E61-BB13-7880C2E6DE99}
