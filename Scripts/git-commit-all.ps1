@@ -30,12 +30,19 @@ try {
         }
         else {
             Write-Host "Script change branch on develop, then create new branch and push it to remote." -foreground Blue
-            git branch
+            $branches = git branch
+            Write-Host $branches
             Write-Host "Choose branch. (if name didn't exist, it will be created)" -foreground Blue
             $newBranch = Read-Host
-            git checkout develop
-            git checkout -b $newBranch
-            git branch -u origin $newBranch    
+
+            if ($branches.Contains($newBranch)) {
+                git checkout $newBranch
+            } else {
+                git checkout develop
+                git checkout -b $newBranch
+                git branch -u origin $newBranch    
+            }
+
             git add .
             git commit -m $commitComment
         }
