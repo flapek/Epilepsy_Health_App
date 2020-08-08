@@ -36,6 +36,11 @@ try {
             Write-Host "Choose branch. (if name didn't exist, it will be created)" -foreground Blue
             $newBranch = Read-Host
 
+            if ($newBranch.Contains("master")) {
+                Write-Host "You cannot send changes on master branch, I swithc branch to develop!" -foreground Red
+                $newBranch = "develop"
+            }
+
             if ($branches.Contains($newBranch)) {
                 git checkout $newBranch
             } else {
