@@ -24,12 +24,7 @@ try {
         Write-Host "====================================================================================" -foreground blue
         Write-Host "Are you want commit changes on this branch?? (y/n)"
         $choose = Read-Host
-        if ($choose.ToLower() -eq "y") {
-            git add .
-            git commit -m $commitComment
-            git push
-        }
-        else {
+        if ($choose.ToLower() -eq "n") {            
             Write-Host "Script change branch on develop, then create new branch and push it to remote." -foreground Blue
             $branches = git branch
             Write-Host $branches
@@ -48,12 +43,11 @@ try {
                 git checkout -b $newBranch
                 git push -u origin $newBranch    
             }
-
-            git add .
-            git commit -m $commitComment
-            git push
         }
-        Write-Host "====================================================================================" -foreground blue
+        git add .
+        git commit -m $commitComment
+        git push
+        # Write-Host "====================================================================================" -foreground blue
     }
     Set-Location $currentLocation
 
