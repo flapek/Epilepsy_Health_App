@@ -27,6 +27,7 @@ try {
         if ($choose.ToLower() -eq "y") {
             git add .
             git commit -m $commitComment
+            git push
         }
         else {
             Write-Host "Script change branch on develop, then create new branch and push it to remote." -foreground Blue
@@ -45,6 +46,7 @@ try {
 
             git add .
             git commit -m $commitComment
+            git push
         }
         Write-Host "====================================================================================" -foreground blue
     }
