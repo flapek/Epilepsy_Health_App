@@ -41,7 +41,7 @@ try {
             } else {
                 git checkout develop
                 git checkout -b $newBranch
-                git branch -u origin $newBranch    
+                git push -u origin $newBranch    
             }
 
             git add .
