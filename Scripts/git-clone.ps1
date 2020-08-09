@@ -12,6 +12,10 @@ try {
         Write-Host "====================================================================================" -foreground blue
         $repo_url = "https://github.com/flapek/"+$repo+".git"
         git clone $repo_url
+        $repoLocation = "$($reposLocation)//$($repo)"
+        Set-Location $repoLocation
+        git checkout develop
+        Set-Location $reposLocation
     }
     Set-Location $currentLocation
 
