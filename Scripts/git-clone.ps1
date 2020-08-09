@@ -3,7 +3,7 @@ $repos = ("Epilepsy_Health_App.APIGateway", "Epilepsy_Health_App.Services.Identi
 $toRemoveFromLocation = "\\Epilepsy_Health_App\\Scripts"
 $currentLocation = Get-Location
 
-try {
+try { 
     $reposLocation = $currentLocation -replace $toRemoveFromLocation, ""
     Set-Location $reposLocation  
     foreach($repo in $repos) {
@@ -18,7 +18,9 @@ try {
     Write-Host "Success!!" -foreground Green
 }
 catch {
+    Set-Location $currentLocation
     Write-Host "Error!!" -foreground Red    
     Write-Host "Scripts fail, check it!" -foreground Red
 }
+
 
