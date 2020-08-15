@@ -17,6 +17,17 @@ try {
         git checkout develop
         Set-Location $reposLocation
     }
+
+    $lastRepo = "\\Epilepsy_Health_App"
+    foreach($repo in $repos) {
+        $currentRepo = "\\$($repo)"
+        
+        $reposLocation = $reposLocation -replace $lastRepo, "\$($repo)"  
+        Set-Location $reposLocation
+        $lastRepo = $currentRepo
+
+        git checkout develop
+    }
     Set-Location $currentLocation
 
     Write-Host "Success!!" -foreground Green
