@@ -1,9 +1,9 @@
-$repos = @("Epilepsy_Health_App", "Epilepsy_Health_App.APIGateway", "Epilepsy_Health_App.Services.Identity")
-
-$toRemoveFromLocation = "\\Scripts"
-$currentLocation = Get-Location
-
 try {
+    $repos = @("Epilepsy_Health_App", "Epilepsy_Health_App.APIGateway", "Epilepsy_Health_App.Services.Identity")
+
+    $toRemoveFromLocation = "\\Scripts"
+    $currentLocation = Get-Location
+
     Write-Host "=========================================="
     Write-Host "Write commit message:"
     $commitComment = Read-Host
@@ -47,7 +47,6 @@ try {
         git add .
         git commit -m $commitComment
         git push
-        # Write-Host "====================================================================================" -foreground blue
     }
     Set-Location $currentLocation
 
