@@ -1,0 +1,27 @@
+version: "3.7"
+
+services:
+  api-gateway:
+    build: ../../Epilepsy_Health_App.APIGateway
+    container_name: api-gateway
+    restart: unless-stopped
+    environment:
+      - NTRADA_CONFIG=ntrada.docker
+    ports:
+      - 5000:80
+    networks:
+      - epilepsy_health_app
+
+  identity-service:
+    build: ../../Epilepsy_Health_App.Services.Identity
+    container_name: identity-service
+    restart: unless-stopped
+    ports:
+      - 5001:80
+    networks:
+      - epilepsy_health_app
+
+networks:
+  epilepsy_health_app:
+    name: epilepsy_health_app-network
+    external: true

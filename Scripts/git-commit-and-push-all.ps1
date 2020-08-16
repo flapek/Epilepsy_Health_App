@@ -29,19 +29,19 @@ try {
             $branches = git branch
             Write-Host $branches
             Write-Host "Choose branch. (if name didn't exist, it will be created)" -foreground Blue
-            $newBranch = Read-Host
+            $Branch = Read-Host
 
-            if ($newBranch.Contains("master")) {
+            if ($Branch.Contains("master")) {
                 Write-Host "You cannot send changes on master branch, I swithc branch to develop!" -foreground Red
-                $newBranch = "develop"
+                $Branch = "develop"
             }
 
-            if ($branches.Contains($newBranch)) {
-                git checkout $newBranch
+            if ($branches.Contains($Branch)) {
+                git checkout $Branch
             } else {
                 git checkout develop
-                git checkout -b $newBranch
-                git push -u origin $newBranch    
+                git checkout -b $Branch
+                git push -u origin $Branch    
             }
         }
         git add .
