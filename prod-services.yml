@@ -1,0 +1,13 @@
+apps:
+  - name: api
+    script: dotnet Epilepsy_Health_App.APIGateway.dll
+    cwd: ../Epilepsy_Health_App.APIGateway/src/Epilepsy_Health_App.APIGateway/bin/release/netcoreapp3.1/linux-x64
+    max_restarts: 3
+    env:
+      ASPNETCORE_URLS: http://*:5000
+  - name: identity
+    script: dotnet Epilepsy_Health_App.Services.Identity.Api.dll
+    cwd: ../Epilepsy_Health_App.Services.Identity/src/Epilepsy_Health_App.Services.Identity.Api/bin/release/netcoreapp3.1/linux-x64
+    max_restarts: 3
+    env:
+      ASPNETCORE_URLS: http://*:5001

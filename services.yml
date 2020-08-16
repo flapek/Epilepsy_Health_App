@@ -1,0 +1,9 @@
+apps:
+  - name: api
+    script: dotnet run
+    cwd: ../Epilepsy_Health_App.APIGateway/src/Epilepsy_Health_App.APIGateway
+    max_restarts: 3
+  - name: availability
+    script: dotnet run
+    cwd: ../Epilepsy_Health_App.Services.Identity/src/Epilepsy_Health_App.Services.Identity.Api
+    max_restarts: 3
