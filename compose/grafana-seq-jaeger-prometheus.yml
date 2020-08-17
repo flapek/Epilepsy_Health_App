@@ -8,7 +8,7 @@ services:
     ports:
       - 3000:3000
     networks:
-      - pacco
+      - epilepsy_health_app
     # volumes:
     #   - grafana:/var/lib/grafana
 
@@ -19,7 +19,7 @@ services:
     ports:
       - '9090:9090'
     networks:
-      - pacco
+      - epilepsy_health_app
     # volumes:
     #   - prometheus:/prometheus
 
@@ -36,7 +36,7 @@ services:
       - 14268:14268
       - 16686:16686
     networks:
-      - pacco
+      - epilepsy_health_app
 
   seq:
     image: datalust/seq 
@@ -47,13 +47,13 @@ services:
     ports:
       - 5341:80
     networks:
-      - pacco
+      - epilepsy_health_app
     # volumes: 
     #   - seq:/data
 
 networks:
-  pacco:
-    name: pacco-network
+  epilepsy_health_app:
+    name: epilepsy_health_app-network
     external: true
 
 # volumes:
