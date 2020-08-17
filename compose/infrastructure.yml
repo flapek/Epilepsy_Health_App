@@ -6,7 +6,7 @@ services:
     container_name: consul
     restart: unless-stopped
     networks:
-      - pacco
+      - epilepsy_health_app
     ports:
       - 8500:8500
     # volumes:
@@ -19,7 +19,7 @@ services:
     environment:
     - FABIO_REGISTRY_CONSUL_ADDR=consul:8500
     networks:
-      - pacco
+      - epilepsy_health_app
     ports:
     - 9998:9998
     - 9999:9999
@@ -29,7 +29,7 @@ services:
     container_name: grafana
     restart: unless-stopped
     networks:
-      - pacco
+      - epilepsy_health_app
     ports:
       - 3000:3000
     # volumes:
@@ -40,7 +40,7 @@ services:
     container_name: jaeger
     restart: unless-stopped
     networks:
-      - pacco
+      - epilepsy_health_app
     ports:
       - 5775:5775/udp
       - 5778:5778
@@ -58,7 +58,7 @@ services:
     #   - MONGO_INITDB_ROOT_USERNAME=root
     #   - MONGO_INITDB_ROOT_PASSWORD=secret
     networks:
-      - pacco
+      - epilepsy_health_app
     ports:
       - 27017:27017
     volumes:
@@ -69,7 +69,7 @@ services:
     container_name: prometheus
     restart: unless-stopped
     networks:
-      - pacco
+      - epilepsy_health_app
     ports:
       - 9090:9090
     # volumes:
@@ -80,7 +80,7 @@ services:
     container_name: rabbitmq
     restart: unless-stopped
     networks:
-      - pacco
+      - epilepsy_health_app
     ports:
       - 5672:5672
       - 15672:15672
@@ -93,7 +93,7 @@ services:
     container_name: redis
     restart: unless-stopped
     networks:
-      - pacco
+      - epilepsy_health_app
     ports:
       - 6379:6379
     volumes: 
@@ -106,7 +106,7 @@ services:
     environment:
       - ACCEPT_EULA=Y
     networks:
-      - pacco
+      - epilepsy_health_app
     ports:
       - 5341:80
     # volumes: 
@@ -122,13 +122,13 @@ services:
     cap_add:
       - IPC_LOCK
     networks:
-      - pacco
+      - epilepsy_health_app
     ports:
       - 8200:8200
 
 networks:
-  pacco:
-    name: pacco-network
+  epilepsy_health_app:
+    name: epilepsy_health_app-network
 
 volumes:
   # consul:

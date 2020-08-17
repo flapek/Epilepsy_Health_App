@@ -8,7 +8,7 @@ services:
     ports:
       - 8500:8500
     networks:
-      - pacco
+      - epilepsy_health_app
     # volumes:
     #   - consul:/consul/data
 
@@ -19,7 +19,7 @@ services:
     environment:
     - FABIO_REGISTRY_CONSUL_ADDR=consul:8500
     networks:
-      - pacco
+      - epilepsy_health_app
     ports:
     - 9998:9998
     - 9999:9999
@@ -31,7 +31,7 @@ services:
     ports:
       - 8200:8200
     networks:
-      - pacco
+      - epilepsy_health_app
     environment:
       - VAULT_ADDR=http://127.0.0.1:8200
       - VAULT_DEV_ROOT_TOKEN_ID=secret
@@ -39,8 +39,8 @@ services:
       - IPC_LOCK
 
 networks:
-  pacco:
-    name: pacco-network
+  epilepsy_health_app:
+    name: epilepsy_health_app-network
     external: true
 
 # volumes:
