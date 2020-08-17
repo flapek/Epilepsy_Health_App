@@ -21,5 +21,18 @@ It will start the required infrastructure in the background. Then, you can start
 docker-compose -f services-local.yml up
 ```
 
+## How to stop the solution?
+Open `Epilepsy_Health_App/compose` directory and execute:
+
+```
+docker-compose -f infrastructure.yml down
+```
+
+It will stop infrastructure. Then, you can stop services:
+
+```
+docker-compose -f services-local.yml down
+```
+
 ## What HTTP requests can be sent to the API?
 You can find the list of all HTTP requests in [Epilepsy_Health_App-sample-scenario.rest](https://github.com/flapek/Epilepsy_Health_App.APIGateway/blob/master/Epilepsy_Health_App-sample-scenario.rest) file placed in the root folder of Epilepsy_Health_App.APIGateway repository. This file is compatible with [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) plugin for [Visual Studio Code](https://code.visualstudio.com/).
