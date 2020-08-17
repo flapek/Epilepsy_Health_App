@@ -11,7 +11,7 @@ The above repositories can be also cloned and commit via [scripts](https://githu
 
 ## How to start the solution?
 ----------------
-Open Epilepsy_Health_App/compose directory and execute:
+Open `Epilepsy_Health_App/compose` directory and execute:
 
 ```
 docker-compose -f infrastructure.yml up -d
@@ -25,4 +25,4 @@ docker-compose -f services-local.yml up
 
 ## What HTTP requests can be sent to the API?
 ----------------
-You can find the list of all HTTP requests in [Epilepsy_Health_App-sample-scenario.rest]() file placed in the root folder of Epilepsy_Health_App.APIGateway repository. This file is compatible with [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) plugin for [Visual Studio Code](https://code.visualstudio.com/).
+You can find the list of all HTTP requests in [Epilepsy_Health_App-sample-scenario.rest](https://github.com/flapek/Epilepsy_Health_App.APIGateway/blob/master/Epilepsy_Health_App-sample-scenario.rest) file placed in the root folder of Epilepsy_Health_App.APIGateway repository. This file is compatible with [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) plugin for [Visual Studio Code](https://code.visualstudio.com/).
