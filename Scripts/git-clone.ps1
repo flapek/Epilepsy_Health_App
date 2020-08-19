@@ -12,21 +12,6 @@ try {
         Write-Host "====================================================================================" -foreground blue
         $repo_url = "https://github.com/flapek/"+$repo+".git"
         git clone $repo_url
-        $repoLocation = "$($reposLocation)//$($repo)"
-        Set-Location $repoLocation
-        git checkout develop
-        Set-Location $reposLocation
-    }
-
-    $lastRepo = "\\Epilepsy_Health_App"
-    foreach($repo in $repos) {
-        $currentRepo = "\\$($repo)"
-        
-        $reposLocation = $reposLocation -replace $lastRepo, "\$($repo)"  
-        Set-Location $reposLocation
-        $lastRepo = $currentRepo
-
-        git checkout develop
     }
     Set-Location $currentLocation
 
