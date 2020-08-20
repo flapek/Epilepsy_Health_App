@@ -1,5 +1,5 @@
 try {
-    $repos = @("Epilepsy_Health_App", "Epilepsy_Health_App.APIGateway", "Epilepsy_Health_App.Services.Identity")
+    $repos = @("Epilepsy_Health_App", "Epilepsy_Health_App.APIGateway", "Epilepsy_Health_App.Services.Identity", "Epilepsy_Health_App.Service.Common")
 
     $toRemoveFromLocation = "\\Scripts"
     $currentLocation = Get-Location
@@ -7,14 +7,15 @@ try {
     Write-Host "=========================================="
     Write-Host "Start git checkout develop." -ForegroundColor Blue
 
-    $reposLocation = $currentLocation -replace $toRemoveFromLocation, ""
+    $repoLocation = $currentLocation -replace $toRemoveFromLocation, ""
     $lastRepo = "\\Epilepsy_Health_App"
     foreach($repo in $repos) {
         $currentRepo = "\\$($repo)"
         
-        $reposLocation = $reposLocation -replace $lastRepo, "\$($repo)"  
-        Set-Location $reposLocation
+        $repoLocation = $repoLocation -replace $lastRepo, "\$($repo)"  
+        Set-Location $repoLocation
         $lastRepo = $currentRepo
+        Write-Host $repoLocation -ForegroundColor Blue
 
         git checkout develop
     }

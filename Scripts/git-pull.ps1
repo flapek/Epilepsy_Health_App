@@ -1,5 +1,5 @@
 try {
-    $repos = @("Epilepsy_Health_App", "Epilepsy_Health_App.APIGateway", "Epilepsy_Health_App.Services.Identity")
+    $repos = @("Epilepsy_Health_App", "Epilepsy_Health_App.APIGateway", "Epilepsy_Health_App.Services.Identity", "Epilepsy_Health_App.Service.Common")
 
     $toRemoveFromLocation = "\\Scripts"
     $currentLocation = Get-Location
