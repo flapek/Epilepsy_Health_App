@@ -16,7 +16,6 @@ try {
         Set-Location $repoLocation
         $lastRepo = $currentRepo
         Write-Host $repoLocation -ForegroundColor Blue
-        Write-Host "==========================================" -ForegroundColor Yellow
         git status
         Write-Host "==========================================" -ForegroundColor Yellow
     }
