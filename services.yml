@@ -7,3 +7,7 @@ apps:
     script: dotnet run
     cwd: ../Epilepsy_Health_App.Services.Identity/src/Epilepsy_Health_App.Services.Identity.Api
     max_restarts: 3
+  - name: healthdata
+    script: dotnet run
+    cwd: ../Epilepsy_Health_App.Services.HealthData/src/Epilepsy_Health_App.Services.HealthData.Api
+    max_restarts: 3

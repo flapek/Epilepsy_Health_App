@@ -11,3 +11,9 @@ apps:
     max_restarts: 3
     env:
       ASPNETCORE_URLS: http://*:5001
+  - name: healthdata
+    script: dotnet run
+    cwd: ../Epilepsy_Health_App.Services.HealthData/src/Epilepsy_Health_App.Services.HealthData.Api
+    max_restarts: 3
+    env:
+      ASPNETCORE_URLS: http://*:5002

@@ -1,4 +1,4 @@
-$repos = ("Epilepsy_Health_App.APIGateway", "Epilepsy_Health_App.Services.Identity", "SCL")
+$repos = ("Epilepsy_Health_App.APIGateway", "Epilepsy_Health_App.Services.Identity", "Epilepsy_Health_App.Services.HealthData", "SCL")
 
 $toRemoveFromLocation = "\\Epilepsy_Health_App\\Scripts"
 $currentLocation = Get-Location
