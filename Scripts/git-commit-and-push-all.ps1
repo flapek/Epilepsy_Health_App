@@ -11,7 +11,7 @@ try {
     $lastRepo = "\\Epilepsy_Health_App"
 
     Write-Host "Are you want commit changes on all branches?? (y/n)"
-    $choose = Read-Host
+    $pushAllRepo = Read-Host
 
     foreach($repo in $repos) {
         $currentRepo = "\\$($repo)"
@@ -27,7 +27,7 @@ try {
         Write-Host "Current branch - "$currentBranch -foreground Yellow
         Write-Host "====================================================================================" -foreground blue
        
-        if ($choose.ToLower() -eq "n") {
+        if ($pushAllRepo.ToLower() -eq "n") {
             
             Write-Host "Are you want commit changes on this branch?? (y/n)"
             $choose = Read-Host
