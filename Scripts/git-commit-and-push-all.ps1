@@ -27,7 +27,7 @@ try {
         Write-Host "Current branch - "$currentBranch -foreground Yellow
         Write-Host "====================================================================================" -foreground blue
        
-        if ($choose.ToLower() -eq "y") {
+        if ($choose.ToLower() -eq "n") {
             
             Write-Host "Are you want commit changes on this branch?? (y/n)"
             $choose = Read-Host
