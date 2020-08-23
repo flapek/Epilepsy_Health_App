@@ -30,8 +30,8 @@ try {
         if ($pushAllRepo.ToLower() -eq "n") {
             
             Write-Host "Are you want commit changes on this branch?? (y/n)"
-            $choose = Read-Host
-            if ($choose.ToLower() -eq "n") {            
+            $pushRepoToBranch = Read-Host
+            if ($pushRepoToBranch.ToLower() -eq "n") {            
                 Write-Host "Script change branch on develop, then create new branch and push it to remote." -foreground Blue
                 $branches = git branch
                 Write-Host $branches
