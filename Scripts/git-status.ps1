@@ -5,24 +5,23 @@ try {
     $currentLocation = Get-Location
 
     Write-Host "=========================================="
-    Write-Host "Start git pull..." -ForegroundColor Blue
-    $reposLocation = $currentLocation -replace $toRemoveFromLocation, ""
+    Write-Host "Start git status." -ForegroundColor Blue
+
+    $repoLocation = $currentLocation -replace $toRemoveFromLocation, ""
     $lastRepo = "\\Epilepsy_Health_App"
     foreach($repo in $repos) {
         $currentRepo = "\\$($repo)"
         
-        Write-Host "Set location..."
-        $reposLocation = $reposLocation -replace $lastRepo, "\$($repo)"  
-        Set-Location $reposLocation
+        $repoLocation = $repoLocation -replace $lastRepo, "\$($repo)"  
+        Set-Location $repoLocation
         $lastRepo = $currentRepo
-        Write-Host Get-Location -ForegroundColor Yellow
-        Write-Host "Pull from: $($repo)" -ForegroundColor Blue
-        git checkout develop        
-        git pull
+        Write-Host $repoLocation -ForegroundColor Blue
+        git status
+        Write-Host "==========================================" -ForegroundColor Yellow
     }
     Set-Location $currentLocation
 
-    Write-Host "Success!!" -foreground Green
+    Write-Host "Finish!!" -foreground Green
 }
 catch {
     Set-Location $currentLocation

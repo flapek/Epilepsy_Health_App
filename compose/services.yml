@@ -5,8 +5,6 @@ services:
     build: ../../Epilepsy_Health_App.APIGateway
     container_name: api-gateway
     restart: unless-stopped
-    environment:
-      - NTRADA_CONFIG=ntrada.docker
     ports:
       - 5000:80
     networks:
@@ -18,6 +16,15 @@ services:
     restart: unless-stopped
     ports:
       - 5001:80
+    networks:
+      - epilepsy_health_app
+    
+  healthdata-service:
+    build: ../../Epilepsy_Health_App.Services.HealthData
+    container_name: healthdata-service
+    restart: unless-stopped
+    ports:
+      - 5002:80
     networks:
       - epilepsy_health_app
 
