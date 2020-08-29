@@ -17,7 +17,8 @@ try {
         $lastRepo = $currentRepo
         Write-Host Get-Location -ForegroundColor Yellow
         Write-Host "Pull from: $($repo)" -ForegroundColor Blue
-        git checkout develop        
+        git checkout develop
+        git fetch
         git pull
     }
     Set-Location $currentLocation
