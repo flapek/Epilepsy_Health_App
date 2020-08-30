@@ -3,9 +3,12 @@
 ## Which repositories should I clone?
 Please clone the following repositories and put them into the same working directory:
 - [Epilepsy_Health_App](https://github.com/flapek/Epilepsy_Health_App)
-- [Epilepsy_Health_App.APIGateway](https://github.com/flapek/Epilepsy_Health_App.APIGateway) [![Build Status](https://travis-ci.org/flapek/Epilepsy_Health_App.APIGateway.svg?branch=master)](https://travis-ci.org/flapek/Epilepsy_Health_App.APIGateway)
-- [Epilepsy_Health_App.Services.Identity](https://github.com/flapek/Epilepsy_Health_App.Services.Identity) [![Build Status](https://travis-ci.org/flapek/Epilepsy_Health_App.Services.Identity.svg?branch=master)](https://travis-ci.org/flapek/Epilepsy_Health_App.Services.Identity)
-- [Epilepsy_Health_App.Services.HealthData](https://github.com/flapek/Epilepsy_Health_App.Services.HealthData) [![Build Status](https://travis-ci.org/flapek/Epilepsy_Health_App.Services.HealthData.svg?branch=master)](https://travis-ci.org/flapek/Epilepsy_Health_App.Services.HealthData)
+- [Epilepsy_Health_App.APIGateway](https://github.com/flapek/Epilepsy_Health_App.APIGateway)
+[![Build Status](https://travis-ci.org/flapek/Epilepsy_Health_App.APIGateway.svg?branch=master)](https://travis-ci.org/flapek/Epilepsy_Health_App.APIGateway)
+- [Epilepsy_Health_App.Services.Identity](https://github.com/flapek/Epilepsy_Health_App.Services.Identity)
+[![Build Status](https://travis-ci.org/flapek/Epilepsy_Health_App.Services.Identity.svg?branch=master)](https://travis-ci.org/flapek/Epilepsy_Health_App.Services.Identity)
+- [Epilepsy_Health_App.Services.HealthData](https://github.com/flapek/Epilepsy_Health_App.Services.HealthData)
+[![Build Status](https://travis-ci.org/flapek/Epilepsy_Health_App.Services.HealthData.svg?branch=master)](https://travis-ci.org/flapek/Epilepsy_Health_App.Services.HealthData)
 
 The above repositories can be also cloned and commit via [scripts](https://github.com/flapek/Epilepsy_Health_App/tree/master/Scripts).
 
