@@ -1,5 +1,5 @@
 try {
-    $repos = @("Epilepsy_Health_App", "Epilepsy_Health_App.APIGateway", "Epilepsy_Health_App.Services.Identity", "Epilepsy_Health_App.Services.HealthData", "SCL")
+    $repos = @("Epilepsy_Health_App", "Epilepsy_Health_App.APIGateway", "Epilepsy_Health_App.Services.Identity", "Epilepsy_Health_App.Services.HealthData", "Joint")
 
     $toRemoveFromLocation = "\\Scripts"
     $currentLocation = Get-Location
@@ -17,7 +17,8 @@ try {
         $lastRepo = $currentRepo
         Write-Host Get-Location -ForegroundColor Yellow
         Write-Host "Pull from: $($repo)" -ForegroundColor Blue
-        git checkout develop        
+        git checkout develop
+        git fetch
         git pull
     }
     Set-Location $currentLocation
