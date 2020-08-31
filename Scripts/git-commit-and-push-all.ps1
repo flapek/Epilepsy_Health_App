@@ -10,6 +10,18 @@ try {
     $reposLocation = $currentLocation -replace $toRemoveFromLocation, ""
     $lastRepo = "\\Epilepsy_Health_App"
 
+    Write-Host "====================================================================================" -foreground blue
+    foreach($repo in $repos) {
+        $currentRepo = "\\$($repo)"
+        $reposLocation = $reposLocation -replace $lastRepo, "\$($repo)"  
+        Set-Location $reposLocation
+        $lastRepo = $currentRepo
+        $currentBranch = git branch --show-current
+        Write-Host "Current branch: "$currentBranch" | Commit the Repository: "$repo -foreground Blue
+        Set-Location $currentLocation
+    }
+    Write-Host "====================================================================================" -foreground blue
+
     Write-Host "Are you want commit changes on all branches?? (y/n)"
     $pushAllRepo = Read-Host
 
@@ -20,7 +32,6 @@ try {
         Set-Location $reposLocation
         $lastRepo = $currentRepo
 
-        git checkout develop
         $currentBranch = git branch --show-current
         Write-Host "====================================================================================" -foreground blue
         Write-Host "Commit the Repository: "$repo -foreground Blue
