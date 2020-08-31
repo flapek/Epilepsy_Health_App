@@ -35,6 +35,7 @@ try {
         $currentBranch = git branch --show-current
         Write-Host "====================================================================================" -foreground blue
         Write-Host "Commit the Repository: "$repo -foreground Blue
+        Write-Host "====================================================================================" -foreground blue
        
         if ($pushAllRepo.ToLower() -eq "n") {
             
