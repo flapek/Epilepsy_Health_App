@@ -7,6 +7,8 @@ Please clone the following repositories and put them into the same working direc
 [![Build Status](https://travis-ci.org/flapek/Epilepsy_Health_App.APIGateway.svg?branch=master)](https://travis-ci.org/flapek/Epilepsy_Health_App.APIGateway)
 - [Epilepsy_Health_App.Services.Identity](https://github.com/flapek/Epilepsy_Health_App.Services.Identity)
 [![Build Status](https://travis-ci.org/flapek/Epilepsy_Health_App.Services.Identity.svg?branch=master)](https://travis-ci.org/flapek/Epilepsy_Health_App.Services.Identity)
+- [Epilepsy_Health_App.Services.Users](https://github.com/flapek/Epilepsy_Health_App.Services.Users)
+[![Build Status](https://travis-ci.org/flapek/Epilepsy_Health_App.Services.Users.svg?branch=master)](https://travis-ci.org/flapek/Epilepsy_Health_App.Services.Users)
 - [Epilepsy_Health_App.Services.HealthData](https://github.com/flapek/Epilepsy_Health_App.Services.HealthData)
 [![Build Status](https://travis-ci.org/flapek/Epilepsy_Health_App.Services.HealthData.svg?branch=master)](https://travis-ci.org/flapek/Epilepsy_Health_App.Services.HealthData)
 
