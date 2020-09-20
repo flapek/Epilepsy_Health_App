@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30320.27
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Epilepsy_Health_App.APIGateway", "Epilepsy_Health_App.APIGateway", "{4E1AEE61-F30B-4737-90F6-40B39C2A8038}"
 EndProject
@@ -34,6 +34,22 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epilepsy_Health_App.Services.Identity.Infrastructure", "..\Epilepsy_Health_App.Services.Identity\src\Epilepsy_Health_App.Services.Identity.Infrastructure\Epilepsy_Health_App.Services.Identity.Infrastructure.csproj", "{4C37BD34-0A9F-42CC-A1B3-3D5C12DD8901}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epilepsy_Health_App.Services.Identity.Unit.Test", "..\Epilepsy_Health_App.Services.Identity\test\Epilepsy_Health_App.Services.Identity.Unit.Test\Epilepsy_Health_App.Services.Identity.Unit.Test.csproj", "{45FD5CD3-926D-467D-BBE6-6AF26F86A91E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Epilepsy_Health_App.Services.Users", "Epilepsy_Health_App.Services.Users", "{8F9261C6-5C16-466A-8FEA-D3AD8C155FCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CE0341C3-9CC5-4DE9-803E-68599F4E21DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{57B323ED-10A2-4CEE-9969-9CA8EBB9AE7E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epilepsy_Health_App.Services.Users.Api", "..\Epilepsy_Health_App.Services.Users\src\Epilepsy_Health_App.Services.Users.Api\Epilepsy_Health_App.Services.Users.Api.csproj", "{C67E9D8F-AFBB-46D7-93BA-128C5EEB613F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epilepsy_Health_App.Services.Users.Core", "..\Epilepsy_Health_App.Services.Users\src\Epilepsy_Health_App.Services.Users.Core\Epilepsy_Health_App.Services.Users.Core.csproj", "{8ABFAD31-4793-4BC7-9D85-3FA793B473E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epilepsy_Health_App.Services.Users.Application", "..\Epilepsy_Health_App.Services.Users\src\Epilepsy_Health_App.Services.Users.Application\Epilepsy_Health_App.Services.Users.Application.csproj", "{2D46F5EE-39E8-4C69-B329-274F00597745}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epilepsy_Health_App.Services.Users.Infrastructure", "..\Epilepsy_Health_App.Services.Users\src\Epilepsy_Health_App.Services.Users.Infrastructure\Epilepsy_Health_App.Services.Users.Infrastructure.csproj", "{5BE69434-9D94-4C2A-8969-47BB444CC5A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epilepsy_Health_App.Services.Users.UnitTest", "..\Epilepsy_Health_App.Services.Users\test\Epilepsy_Health_App.Services.Users.UnitTest\Epilepsy_Health_App.Services.Users.UnitTest.csproj", "{C5451B27-B9A4-49C8-91F8-201F90225487}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +89,26 @@ Global
 		{45FD5CD3-926D-467D-BBE6-6AF26F86A91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45FD5CD3-926D-467D-BBE6-6AF26F86A91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45FD5CD3-926D-467D-BBE6-6AF26F86A91E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67E9D8F-AFBB-46D7-93BA-128C5EEB613F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67E9D8F-AFBB-46D7-93BA-128C5EEB613F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67E9D8F-AFBB-46D7-93BA-128C5EEB613F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67E9D8F-AFBB-46D7-93BA-128C5EEB613F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ABFAD31-4793-4BC7-9D85-3FA793B473E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABFAD31-4793-4BC7-9D85-3FA793B473E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABFAD31-4793-4BC7-9D85-3FA793B473E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABFAD31-4793-4BC7-9D85-3FA793B473E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D46F5EE-39E8-4C69-B329-274F00597745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D46F5EE-39E8-4C69-B329-274F00597745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D46F5EE-39E8-4C69-B329-274F00597745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D46F5EE-39E8-4C69-B329-274F00597745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BE69434-9D94-4C2A-8969-47BB444CC5A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BE69434-9D94-4C2A-8969-47BB444CC5A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BE69434-9D94-4C2A-8969-47BB444CC5A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BE69434-9D94-4C2A-8969-47BB444CC5A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5451B27-B9A4-49C8-91F8-201F90225487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5451B27-B9A4-49C8-91F8-201F90225487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5451B27-B9A4-49C8-91F8-201F90225487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5451B27-B9A4-49C8-91F8-201F90225487}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,8 +127,15 @@ Global
 		{BBAF5FE8-DDEA-4124-B258-A5455E0230B8} = {BACBDC2B-B149-4F9D-A37F-70C917B72D54}
 		{4C37BD34-0A9F-42CC-A1B3-3D5C12DD8901} = {BACBDC2B-B149-4F9D-A37F-70C917B72D54}
 		{45FD5CD3-926D-467D-BBE6-6AF26F86A91E} = {141D337D-9722-457B-BEFA-5E0B7B97055D}
+		{CE0341C3-9CC5-4DE9-803E-68599F4E21DD} = {8F9261C6-5C16-466A-8FEA-D3AD8C155FCB}
+		{57B323ED-10A2-4CEE-9969-9CA8EBB9AE7E} = {8F9261C6-5C16-466A-8FEA-D3AD8C155FCB}
+		{C67E9D8F-AFBB-46D7-93BA-128C5EEB613F} = {CE0341C3-9CC5-4DE9-803E-68599F4E21DD}
+		{8ABFAD31-4793-4BC7-9D85-3FA793B473E4} = {CE0341C3-9CC5-4DE9-803E-68599F4E21DD}
+		{2D46F5EE-39E8-4C69-B329-274F00597745} = {CE0341C3-9CC5-4DE9-803E-68599F4E21DD}
+		{5BE69434-9D94-4C2A-8969-47BB444CC5A9} = {CE0341C3-9CC5-4DE9-803E-68599F4E21DD}
+		{C5451B27-B9A4-49C8-91F8-201F90225487} = {57B323ED-10A2-4CEE-9969-9CA8EBB9AE7E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {41A47F41-F194-4516-BDD9-8C1A1A1A065A}
+		SolutionGuid = {DA644A16-5AC6-43D5-99CA-9EB892DAD986}
 	EndGlobalSection
 EndGlobal
