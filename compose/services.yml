@@ -19,14 +19,14 @@ services:
     networks:
       - epilepsy_health_app
     
-  # users-service:
-  #   build: ../../Epilepsy_Health_App.Services.Users
-  #   container_name: users-service
-  #   restart: unless-stopped
-  #   ports:
-  #     - 5002:5002
-  #   networks:
-  #     - epilepsy_health_app
+  users-service:
+    build: ../../Epilepsy_Health_App.Services.Users
+    container_name: users-service
+    restart: unless-stopped
+    ports:
+      - 5002:5002
+    networks:
+      - epilepsy_health_app
 
   # healthdata-service:
   #   build: ../../Epilepsy_Health_App.Services.HealthData
