@@ -112,19 +112,19 @@ services:
     # volumes: 
     #   - seq:/data
 
-  # vault:
-  #   image: vault
-  #   container_name: vault
-  #   restart: unless-stopped
-  #   environment:
-  #     - VAULT_ADDR=http://127.0.0.1:8200
-  #     - VAULT_DEV_ROOT_TOKEN_ID=secret
-  #   cap_add:
-  #     - IPC_LOCK
-  #   networks:
-  #     - epilepsy_health_app
-  #   ports:
-  #     - 8200:8200
+  vault:
+    image: vault
+    container_name: vault
+    restart: unless-stopped
+    environment:
+      - VAULT_ADDR=http://127.0.0.1:8200
+      - VAULT_DEV_ROOT_TOKEN_ID=secret
+    cap_add:
+      - IPC_LOCK
+    networks:
+      - epilepsy_health_app
+    ports:
+      - 8200:8200
 
 networks:
   epilepsy_health_app:
